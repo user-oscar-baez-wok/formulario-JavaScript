@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormularioVista</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <form class="form" id="form">
+        <h2>Formulario</h2>
+        <section class="form-content">
+          <div class="form-item">
+            <label for="form_name">Nombre:</label>
+            <div class="form-control">
+              <span class="material-symbols-outlined"> person </span
+              ><input type="text" id="form_name" />
+            </div>
+            <p id="validation_name" class="validation"></p>
+          </div>
+          <div class="form-item">
+            <label for="form_email">Correo Electronico:</label>
+            <div class="form-control">
+              <span class="material-symbols-outlined"> mail </span
+              ><input type="email" id="form_email" />
+            </div>
+            <p id="validation_email" class="validation"></p>
+          </div>
+          <div class="form-item">
+            <label for="form_password">Contraseña:</label>
+            <div class="form-control">
+              <span class="material-symbols-outlined"> lock </span
+              ><input type="password" id="form_password" />
+            </div>
+            <p id="validation_password" class="validation"></p>
+          </div>
+          <div class="form-item">
+            <label for="form_password_repet">Repetir Contraseña:</label>
+            <div class="form-control">
+              <span class="material-symbols-outlined"> lock </span
+              ><input type="password" id="form_password_repet" />
+            </div>
+            <p id="validation_password_repet" class="validation"></p>
+          </div>
+          <input
+            type="submit"
+            value="Registrar"
+            class="form-btn"
+            id="form_btn"
+          />
+        </section>
+      </form>
+    </main>
+    <footer class="footer">
+      <p id="footer-p">Oscar Baez@2024</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
